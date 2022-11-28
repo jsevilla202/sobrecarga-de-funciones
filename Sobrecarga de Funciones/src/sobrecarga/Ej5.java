@@ -12,7 +12,7 @@ public class Ej5 {
 	
 	public static void numerosAleatorios (int cantidad, int valor) {
 		for(int i = 1; i<=cantidad;i++) {
-			int numero = (int) (Math.random()*valor);
+			int numero = (int) (Math.random()*(valor+1));
 			System.out.println(numero);
 		}
 	}
@@ -54,6 +54,7 @@ public class Ej5 {
 				n1 = sc.nextInt();
 				System.out.print("Inserte el valor máximo de los números aleatorios: ");
 				n2 = sc.nextInt();
+				n2++;
 				System.out.print("Inserte el valor mínimo de los números aleatorios: ");
 				n3 = sc.nextInt();
 				numerosAleatorios(n1, n2, n3);
