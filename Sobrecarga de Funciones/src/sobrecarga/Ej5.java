@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class Ej5 {
 	public static void numerosAleatorios (int cantidad) {
 		for(int i = 1; i<=cantidad;i++) {
-			int numero = (int) (Math.random()*100)+1;
+			int numero = (int) (Math.random()*100);
 			System.out.println(numero);
 		}
 	}
 	
 	public static void numerosAleatorios (int cantidad, int valor) {
 		for(int i = 1; i<=cantidad;i++) {
-			int numero = (int) (Math.random()*valor)+1;
+			int numero = (int) (Math.random()*valor);
 			System.out.println(numero);
 		}
 	}
 	
 	public static void numerosAleatorios (int cantidad, int valorminimo, int valormaximo) {
 		for(int i = 1; i<=cantidad;i++) {
-			int numero = (int) (Math.random()*(valormaximo-valorminimo)+valorminimo)+1;
+			int numero = (int) (Math.random()*(valormaximo-valorminimo)+valorminimo);
 			System.out.println(numero);
 		}
 	}
